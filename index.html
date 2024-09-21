@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <h1 class="hnav">Css Generator</h1>
+
+        <a href="#" class="btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="slide_nav">
+            <ul class="menu">
+                <li><a href="#" class="a rtn_home">Home</a></li>
+                <li><a href="#" class="a">Content</a></li>
+                <li><a href="#" class="a">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="popup">
+            <div class="options">
+                <button class="opt opt1">Border Radius</button>
+                <button class="opt opt2">Box Shadow</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="box1">
+            <div class="border_all">
+                <label for="all">Border Radius : <span class="show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="all">
+            </div>
+
+            <div class="border_all">
+                <label for="border_top_left">Border Top Left : <span class="top_left_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="border_top_left">
+            </div>
+
+            <div class="border_all">
+                <label for="border_top_right">Border Top Right : <span class="top_right_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="border_top_right">
+            </div>
+
+            <div class="border_all">
+                <label for="border_bottom_left">Border Bottom Left : <span class="bottom_left_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="border_bottom_left">
+            </div>
+
+            <div class="border_all">
+                <label for="border_bottom_right">Border Bottom Right : <span class="bottom_right_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="border_bottom_right">
+            </div>
+
+            <div class="border_all">
+                <label for="border_style">Border Radius : <span class="style_show"></span></label>
+                <input type="range" value="0" min="0" max="20" id="border_style">
+                <select id="border_type">
+                    <option >none</option> 
+                    <option >Solid</option>
+                    <option >Dotted</option>
+                    <option >Dashed</option>
+                    <option >Double</option>
+                    <option >Groove</option>
+                    <option >Ridge</option>
+                    <option >Inset</option>
+                    <option >Outset</option>
+                    <option >hidden</option> 
+                </select>
+            </div>
+            
+            <div class="border_all">
+                <textarea id="code"></textarea>
+            </div>
+
+            <div class="border_all">
+                <button id="btnCopy">COPY</button>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="obj"></div>
+        </div>
+    </div>
+
+    <!-- <div class="container2">
+        <div class="box1">
+            <div class="border_all">
+                <label for="all">Horizontal Length : <span class="show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="all">
+            </div>
+
+            <div class="border_all">
+                <label for="">Vertical Length : <span class=""></span></label>
+                <input type="range" value="0" min="0" max="200" id="">
+            </div>
+
+            <div class="border_all">
+                <label for="">Blur Radius : <span class="top_right_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="">
+            </div>
+
+            <div class="border_all">
+                <label for="">Spread Radius : <span class="bottom_left_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="">
+            </div>
+
+            <div class="border_all">
+                <label for="">Opacity : <span class="bottom_right_show"></span></label>
+                <input type="range" value="0" min="0" max="200" id="">
+            </div>
+            
+            <div class="border_all">
+                <textarea id="code"></textarea>
+            </div>
+
+            <div class="border_all">
+                <button id="btnCopy">COPY</button>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="obj"></div>
+        </div>
+    </div> -->
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

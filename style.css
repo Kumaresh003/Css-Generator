@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, #464837, #5a6537, #698436, #74a535, #78c836, #6cd94b, #59eb62, #34fc7b, #00fc9f, #00fbbe, #00f9d7, #21f6e9);
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    line-height: 30px;
+}
+
+.hnav {
+    font-family: "Fondamento", cursive;
+    font-size: 40px;
+    pointer-events: none;
+    text-shadow: 3px 3px 4px white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.8s ease;
+}
+
+li:hover,
+a:hover {
+    font-size: 25px;
+    color: black;
+}
+
+li:after {
+    content: "";
+    margin: auto;
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+
+li:hover:after {
+    background-color: black;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, #69f653, #00eda9, #00dcea, #00c4ff, #00a7ff, #5495fe, #847ff2, #ab64dc, #d853be, #f34a9a, #ff5075, #fc6252);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-size: 400% 400%;
+    animation: bganimation 3s ease infinite;
+}
+
+/* .home{
+    display: none;
+} */
+
+.options {
+    width: 60%;
+    height: 70%;
+    padding: 10px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opt {
+    padding: 10px 20px;
+    border: 2px solid white;
+    display: inline-block;
+    background-color: transparent;
+    text-shadow: 4px 4px 2px white;
+    transition: all 1s ease;
+}
+
+.opt:hover {
+    color: white;
+    border: 5px solid black;
+    font-size: 25px;
+    text-shadow: 4px 4px 2px black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #56ccf2, #2f80ed);
+    display: none;
+    justify-content: space-around;
+  
+}
+
+
+@keyframes bganimation {
+
+    0%{
+        background-position: 0%;
+    }
+    25%{
+        background-position: 30%;
+    }
+    75%{
+        background-position: 90%;
+    }
+    100%{
+        background-position: 10%;
+    }
+    
+}
+
+.box1,
+.box2 {
+    width: 40vw;
+    height: 80vh;
+    background: linear-gradient(90deg, #d4fc79, #96e6a1);
+    border: 1px solid black;
+    margin-top: 50px;
+
+}
+
+.border_all {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.border_all input {
+    width: 100%;
+}
+
+.border_all label {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    resize: none;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+#btnCopy {
+    width: 30%;
+    padding: 5px;
+    background-color: #a4b0be;
+
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.obj {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+
+@media screen and (max-width:576px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1,
+    .box2 {
+        width: 70vw;
+        height: 60vh;
+        border: 1px solid black;
+        margin-top: 50px;
+        overflow: scroll;
+
+    }
+
+    .hnav {
+        font-family: "Fondamento", cursive;
+        font-size: 30px;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .obj {
+        width: 250px;
+        height: 250px;
+        background-color: white;
+    }
+
+    .options {
+        width: 80%;
+        height: 60%;
+    }
+
+    li:hover,
+    a:hover {
+    font-size: 15px;
+    color: black;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 5px;
+        transition: all 0.8s ease;
+    }
+
+    a {
+    font-size: 12px;
+    }
+
+    .nav{
+        padding: 5px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        right: 30px;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: aliceblue;
+    }
+    
+    .menu {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 2;
+    
+    }
+    
+    .menu a {
+        display: flex;
+        width: 250px;
+        font-weight: 600;
+        color: gray;
+        text-decoration: none;
+        align-items: center;
+        padding: 10px 20px;
+        transition: all 0.5s ease;
+    }
+    
+    .menu a:hover {
+        background-color: darkgray;
+        color: black;
+        border-bottom: 2px solid;
+    }
+    
+    .menu {
+        transform: translateX(250px);
+        transition: 0.5;
+    }
+    
+    .open .menu {
+        transform: translateX(0);
+    }
+    
+
+}
